@@ -1,13 +1,7 @@
 def reverse(x):
     num = str(x)[::-1]
-    idx = 0
-    for i, val in enumerate(num):
-        if val == '0':
-            continue
-        else:
-            idx = i
-            break
-    return int(num[idx:])
+    num = int(num)
+    return num
 
 def isPrime(x):
     if x == 1:
@@ -26,3 +20,14 @@ for num in num_li:
     if temp == True:
         answer.append(reverse(num))
 print(*answer)
+
+# another answer about reverse func
+'''
+def reverse(x):
+    res = 0
+    while x > 0:
+        t = x % 10
+        res = res * 10 + t
+        x = x // 10
+    return res
+'''

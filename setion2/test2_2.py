@@ -7,4 +7,4 @@ for i in range(t):
     num_li = list(map(int, input().split()))
     l = num_li[s-1:e]
     l.sort()
-    print('#' + str(i+1) + ' ' + str(l[k-1]))
+    print('#%d %d' % (i+1, l[k-1]))
